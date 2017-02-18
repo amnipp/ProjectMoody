@@ -1,6 +1,0 @@
-def get_playlist_tracks(spUser):
-    username = spUser
-    playlists = sp.user_playlists(user=user, limit=50)
-    for playlist in playlists['items']:
-        tracks = sp.user_playlist_tracks(user=playlist['owner']['id'], playlist_id=playlist['uri'])
-    return tracks
